@@ -4,11 +4,9 @@ var animateItems = (function(){
 	var KIDS = document.querySelectorAll('.items');
 
 	var _buildSnippet = function (counter){
-
 		//Cache vars
 		var LI = document.createElement("li"),
 			H2 = document.createElement("h2");
-		//console.log(newCounter);
 		//Set text
 		H2.textContent = counter+1;
 
