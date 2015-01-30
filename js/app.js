@@ -1,7 +1,6 @@
 //Module Pattern
 var animateItems = (function(){
 	var UL = document.querySelector('.items');
-	var KIDS = document.querySelectorAll('.items');
 
 	var _buildSnippet = function (counter){
 		//Cache vars
@@ -16,7 +15,7 @@ var animateItems = (function(){
 	};
 
 	var getChildren = function(counter){
-		return KIDS[0].children[counter];
+		return UL.children[counter];
 	}
 
 	var _fadeInLI = function(item, counter) {
