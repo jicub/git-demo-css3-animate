@@ -14,7 +14,7 @@ var animateItems = (function(){
 		UL.appendChild(LI);
 	};
 
-	var getChildren = function(counter){
+	var _getChildren = function(counter){
 		return UL.children[counter];
 	}
 
@@ -41,7 +41,7 @@ var animateItems = (function(){
 
 		//Animate items
 		for(var x = 0; x < itemNum; x++) {
-			_fadeInLI(getChildren(x), x);
+			_fadeInLI(_getChildren(x), x);
 		}
 	};
 
