@@ -51,10 +51,16 @@
     -webkit-animation-fill-mode: forwards;
 }
 
+.shell {
+    position:relative;
+    width:80%;
+    margin:25px auto;
+}
+
 h1 {
     position: relative;
-    width: 80%;
-    margin:25px auto 20px auto;
+    width: 100%;
+    margin:0 auto 20px auto;
 }
 
 h2 {
@@ -68,7 +74,7 @@ h2 {
 
 .items {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin:auto;
 }
 
@@ -81,4 +87,50 @@ h2 {
     opacity: 0;
     float:left;
     display: none;
+}
+
+.controller {
+    position:relative;
+    float: left;
+    width:100%;
+    margin-bottom:20px;
+
+    label {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    input {
+        width: 65px;
+        font-size: 14px;
+        background-color:#eee;
+        padding: 15px 12px;
+        margin-right: 10px;
+    }
+
+    button {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
 }

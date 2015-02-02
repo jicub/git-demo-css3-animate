@@ -14,9 +14,13 @@ var animateItems = (function(){
 		UL.appendChild(LI);
 	};
 
+	var _clear = function(){
+		UL.innerHTML = '';
+	};
+
 	var _getChildren = function(counter){
 		return UL.children[counter];
-	}
+	};
 
 	var _fadeInLI = function(item, counter) {
 		//Cache vars
@@ -46,6 +50,7 @@ var animateItems = (function(){
 	};
 
 	function init(num){
+		_clear();
 		_makeItems(num);
 	}
 
@@ -53,8 +58,29 @@ var animateItems = (function(){
 	return {
 		init: function(num){
 			init(num);
+		},
+		clear: function(){
+			_clear();
 		}
 	}
 })();
 
-animateItems.init(10);
+var triggerAnimation = (function(){
+
+	var init = function(){
+		var el = document.querySelector('.controller input'),
+			val = el.value;
+
+		animateItems.init(val);
+	};
+
+	return {
+		init : function(){
+			init();
+		},
+		clear : function(){
+			animateItems.clear();
+		}
+	}
+
+})();
