@@ -62,7 +62,7 @@ var animateItems = (function(){
 		clear: function(){
 			_clear();
 		}
-	}
+	};
 })();
 
 var triggerAnimation = (function(){
@@ -81,6 +81,6 @@ var triggerAnimation = (function(){
 		clear : function(){
 			animateItems.clear();
 		}
-	}
+	};
 
 })();

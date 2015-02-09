@@ -8,6 +8,8 @@
     outline:0;
 }
 
+
+
 @-moz-keyframes fade-it {
 
     0% {
@@ -133,4 +135,12 @@ h2 {
         border-radius: 4px;
     }
 
+}
+
+//IE9
+html.ie9 {
+
+    .items li {
+        opacity: 1 !important;
+    }
 }
